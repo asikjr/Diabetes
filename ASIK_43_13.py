@@ -3,8 +3,8 @@ import pandas as pd
 from sklearn.svm import SVC
 svm_model=SVC(kernel='linear')
 df=pd.read_csv("E:\\diabetes.csv")
-df.head()
-df.info()
+#df.head()
+#df.info()
 x=df.iloc[:, [1,2,3,4,5,6,7]].values
 y=df.iloc[:, 8].values
 from sklearn.model_selection import train_test_split
